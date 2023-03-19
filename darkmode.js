@@ -1,10 +1,3 @@
-<script
-  src="
-https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
-"
-></script>;
-
-//dark mode section is here
 
 const toggleButton = document.querySelector(".button.is-secondary");
 const body = document.querySelector("body");
