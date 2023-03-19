@@ -1,35 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
-    <script>
-      const locoScroll = new LocomotiveScroll({
-        el: document.querySelector(".locomotive-scroll"),
-        smooth: true,
-        smartphone: {
-          smooth: true,
-        },
-        tablet: {
-          smooth: true,
-        },
-        smoothMobile: 1,
-        multiplier: 1.0,
-      });
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+/>
 
-      // Wait 2 seconds then calculate the new page height
-      setTimeout(() => {
-        locoScroll.update();
-      }, 2000);
-    </script>
-  </body>
-</html>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.1/dist/locomotive-scroll.min.js"></script>
+<script>
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".locomotive-scroll"),
+    smooth: true,
+    smartphone: {
+      smooth: true,
+    },
+    tablet: {
+      smooth: true,
+    },
+    smoothMobile: 1,
+    multiplier: 1.0,
+  });
+
+  // Wait 2 seconds then calculate the new page height
+  setTimeout(() => {
+    locoScroll.update();
+  }, 2000);
+</script>
