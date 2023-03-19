@@ -1,4 +1,3 @@
-
 const toggleButton = document.querySelector(".button.is-secondary");
 const body = document.querySelector("body");
 
