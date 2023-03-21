@@ -9,4 +9,5 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
-gsap.to('[tn-element-attribute="target"]', {x: 300, duration: 2,delay:.3,stagger:.3});
+
+gsap.from('[tn-element-attribute="target"]', {x: -300, duration:.4,stagger:.3});
