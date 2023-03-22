@@ -11,11 +11,12 @@ if (!document.querySelector("html").classList.contains('.page-wrapper')){
     touchMultiplier: 2,
     infinite: false,
   })}*/
-  
+ 
     /* Get scroll value. This is just for testing purposes. Delete this if you're not using the scroll value for anything.
   lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
     console.log({ scroll, limit, velocity, direction, progress })
   })*/
+  if (!document.querySelector("html").classList.contains('.page-wrapper')){
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
@@ -25,15 +26,19 @@ if (!document.querySelector("html").classList.contains('.page-wrapper')){
     smoothTouch: false,
     touchMultiplier: 2,
     infinite: false,
-  })
+  })}
+  
+  window.lenis = lenis;
+
   lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
     console.log({ scroll, limit, velocity, direction, progress })
   })
+
   function raf(time) {
     lenis.raf(time)
     requestAnimationFrame(raf)
   }
-
+  
   
 
 //here is gsap
