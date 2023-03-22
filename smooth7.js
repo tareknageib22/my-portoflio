@@ -23,6 +23,7 @@
   const lenis = new Lenis()
 
   lenis.on('scroll', (e) => {
+    e.preventDefault();
     console.log(e)
   })
   
