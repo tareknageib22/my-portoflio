@@ -20,10 +20,9 @@
     requestAnimationFrame(raf)
   }
   */
-  const lenis = new Lenis()
+  const lenis = new Lenis({normalizeWheel:true})
 
   lenis.on('scroll', (e) => {
-    e.preventDefault();
     console.log(e)
   })
   
