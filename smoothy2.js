@@ -1,5 +1,5 @@
 
-//first basic code snippet
+/*first basic code snippet
 if (!document.querySelector("html").classList.contains('.page-wrapper')){
   const lenis = new Lenis({
     duration: 1.2,
@@ -10,7 +10,7 @@ if (!document.querySelector("html").classList.contains('.page-wrapper')){
     smoothTouch: false,
     touchMultiplier: 2,
     infinite: false,
-  })}
+  })}*/
   
     /* Get scroll value. This is just for testing purposes. Delete this if you're not using the scroll value for anything.
   lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
