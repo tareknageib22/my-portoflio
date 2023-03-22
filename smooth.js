@@ -12,11 +12,13 @@ if (!document.querySelector("html").classList.contains('.page-wrapper')){
     infinite: false,
   })}
   
-    // Get scroll value. This is just for testing purposes. Delete this if you're not using the scroll value for anything.
+    /* Get scroll value. This is just for testing purposes. Delete this if you're not using the scroll value for anything.
   lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
     console.log({ scroll, limit, velocity, direction, progress })
+  })*/
+  lenis.on('scroll', (e) => {
+    console.log(e)
   })
-
   function raf(time) {
     lenis.raf(time)
     requestAnimationFrame(raf)
