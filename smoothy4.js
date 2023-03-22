@@ -26,8 +26,8 @@ if (!document.querySelector("html").classList.contains('.page-wrapper')){
     touchMultiplier: 2,
     infinite: false,
   })
-  lenis.on('scroll', (e) => {
-    console.log(e)
+  lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+    console.log({ scroll, limit, velocity, direction, progress })
   })
   function raf(time) {
     lenis.raf(time)
