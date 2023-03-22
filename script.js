@@ -1,13 +1,13 @@
 
 //first basic code snippet
-if (!document.querySelector("html").classList.contains('w-editor')){
+if (!document.querySelector("html").classList.contains('.page-wrapper')){
   const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
     orientation: 'vertical', // vertical, horizontal
-    ggestureOrientation: 'vertical', // vertical, horizontal, both
+    gestureOrientation: 'vertical', // vertical, horizontal, both
     smoothWheel: true,
-    smoothTouch: true,
+    smoothTouch: false,
     touchMultiplier: 2,
     infinite: false,
   })}
